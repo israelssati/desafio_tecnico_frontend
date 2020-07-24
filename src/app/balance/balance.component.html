@@ -1,0 +1,25 @@
+  <div class="main-content" align="center">
+    <div class="container-fluid col-lg-6 col-md-12">
+        <div class="row">
+            <div class="card">
+                <div class="card-header card-header-primary">
+                  <img src="assets/img/angular.png" class="md-card-image" style="width: 10%; height: auto" alt="Angular" />
+                  <h4 class="card-title">Desafio Técnico - Banco</h4>
+                </div>
+                <div class="card-body">
+                    CC: {{conta + '-' + agencia}}
+                    <br />
+                    <br />
+                    Saldo R$: {{balance.saldo}}
+                    <div class="card-body">
+                    <br />
+                        <button (click)="voltar()" class="btn btn-danger" style="width: 250px; height: 70px;">
+                            Voltar
+                            <mat-icon aria-hidden="false" >reply</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

@@ -1,0 +1,35 @@
+<div class="main-content" align="center">
+    <div class="container-fluid col-lg-6 col-md-12">
+        <div class="row">
+            <div class="card">
+                <div class="card-header card-header-primary">
+                  <img src="assets/img/angular.png" class="md-card-image" style="width: 10%; height: auto" alt="Angular" />
+                  <h4 class="card-title">Desafio Técnico - Banco</h4>
+                </div>
+                <div class="card-body">
+                    CC: {{conta + '-' + agencia}}
+                    <br />
+                    <br />
+                    <div class="col-md-6 pr-1">
+                        <div class="form-group">
+                            <mat-form-field>
+                            <input matInput type="number" placeholder="Valor" class="form-control" [(ngModel)]="value">
+                            </mat-form-field>
+                            <button (click)="saque()" class="btn btn-sucess">
+                        Sacar
+                        <mat-icon aria-hidden="false" >done</mat-icon>
+                    </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                    <br />
+                        <button (click)="voltar()" class="btn btn-danger" style="width: 250px; height: 70px;">
+                            Voltar
+                            <mat-icon aria-hidden="false" >reply</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

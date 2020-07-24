@@ -1,0 +1,36 @@
+  <div class="main-content" align="center">
+    <div class="container-fluid col-lg-6 col-md-12">
+        <div class="row">
+            <div class="card">
+                <div class="card-header card-header-primary">
+                  <img src="assets/img/angular.png" class="md-card-image" style="width: 10%; height: auto" alt="Angular" />
+                  <h4 class="card-title">Desafio Técnico - Banco</h4>
+                </div>
+                <div class="card-body">
+                    CC: {{conta + '-' + agencia}}
+                    <div class="card-body">
+                        <button (click)="balance()" class="btn btn-info" style="width: 250px; height: 70px;">
+                            SALDO
+                            <mat-icon aria-hidden="false" >remove_red_eye</mat-icon>
+                        </button>
+                        &nbsp;
+                        <button (click)="deposit()" class="btn btn-info" style="width: 250px; height: 70px;">
+                            DEPÓSITO
+                            <mat-icon aria-hidden="false" >payments</mat-icon>
+                        </button>
+                    <br />
+                        <button (click)="withdrawal()" class="btn btn-info" style="width: 250px; height: 70px;">
+                            SAQUE
+                            <mat-icon aria-hidden="false" >attach_money</mat-icon>
+                        </button>
+                        &nbsp;
+                        <button (click)="sair()" class="btn btn-danger" style="width: 250px; height: 70px;">
+                            SAIR
+                            <mat-icon aria-hidden="false" >reply</mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

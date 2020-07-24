@@ -1,0 +1,56 @@
+<div class="main-content" align="center">
+  <div class="container-fluid col-lg-6 col-md-12">
+      <div class="row">
+          <div [hidden]="!loading" class="container-fluid col-lg-6 col-md-12" align="center">
+              <div class="card" style="padding: 50px; width: 400px;">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h2>Autenticando...</h2>
+                      <mat-spinner></mat-spinner>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="card" [hidden]="loading">
+              <div class="card-header card-header-primary">
+                <img src="assets/img/angular.png" class="md-card-image" style="width: 10%; height: auto" alt="Angular" />
+                <h4 class="card-title">Desafio Técnico - Banco</h4>
+              </div>
+              <div class="card-body">
+                  <form [formGroup]="newForm">
+                      <div class="row">
+                          <div class="col-md-5 ">
+                              <div style="text-align: center; vertical-align: middle">
+                                  <br />
+                                  <p><b>Contas pré cadastradas para teste:</b></p>
+                                  <ul>
+                                    <li>Agência: 1111  |  Conta: 1111</li>
+                                    <li>Agência: 2222  |  Conta: 2222</li>
+                                    <li>Agência: 3333  |  Conta: 3333</li>
+                                  </ul>
+                                  <br />
+                                  <div class="separator" style="border-width: 2px; border-color: black;"></div>
+                              </div>
+                          </div>
+                          <div class="col-md-7 text-left">
+                              <div class="row ">
+                                  <div class="form-group col-md-4">
+                                      <input type="number" placeholder="Agência" formControlName="agencia" class="form-control" name="agencia" id="agencia" required>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <input type="number" placeholder="Conta" formControlName="conta" class="form-control" name="conta" id="conta" required>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <button type="submit" (click)="autenticar()" class="btn">Ok</button>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
